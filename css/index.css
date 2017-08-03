@@ -1,0 +1,67 @@
+.banner {
+	position: relative;
+	background: url(img/banner.jpg) no-repeat;
+	height: 1850px;
+	background-size: 100%;
+}
+
+.banner img {
+	position: relative;
+}
+
+.w1200 {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 430px;
+}
+
+.banner-header {
+	background: #f3f3f3;
+	font-size: 14px;
+	height: 45px;
+	line-height: 45px;
+}
+
+.banner-header p {
+	float: left;
+	margin-left: 20px;
+	color: #9a392b;
+	font-size: 14px;
+}
+
+.banner-header p span {
+	color: #e37628;
+}
+
+.sh {
+	float: right;
+	border-radius: 2px;
+	position: relative;
+	margin-top: 7px;
+	margin-right: 20px;
+	width: 260px;
+	height: 30px;
+	background: #e3e3e3;
+}
+
+.sh input {
+	width: 175px;
+	border: 0;
+	outline: none;
+	margin-left: 10px;
+	margin-top: 8px;
+	float: left;
+	color: #a1a1a1;
+	background: #e3e3e3;
+}
+
+.sh button {
+	border: none;
+	outline: none;
+	background: url(img/search_03.jpg) no-repeat;
+	width: 24px;
+	height: 24px;
+	float: right;
+	margin-top: 8px;
+	cursor: pointer;
+}

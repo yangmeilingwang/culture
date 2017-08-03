@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.cl {
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.header {
+	width: 100%;
+	min-width: 1180px;
+	height: 70px;
+	background: #f3f3f3;
+	box-shadow: 1px 2px 8px rgba(13, 5, 9, 0.2);
+	z-index: 99;
+	position: relative;
+}
+
+.w1180 {
+	max-width: 1180px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.top_left a img {
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.top_right .text {
+	float: left;
+	line-height: 67px;
+	padding: 0 20px;
+	font-size: 16px;
+	cursor: pointer;
+	border-top: 3px solid transparent;
+}
+
+.top_right .text:hover {
+	color: #ad1c1c;
+	border-top: 3px solid #ad1c1c;
+}
+
+.aa .ul {
+	position: absolute;
+	background: #ffffff;
+	font-size: 14px;
+	top: 70px;
+	left: 0;
+	right: 0;
+	display: none;
+	border-top: 1px solid #cdcdcd;
+	z-index: 99;
+}
+
+.aa .ul a {
+	float: left;
+	padding: 13px 0;
+	border-bottom: 1px solid #cdcdcd;
+	width: 100%;
+	text-align: center;
+}
+
+.aa {
+	float: left;
+	position: relative;
+}
+
+.top_right .aa:hover .ul {
+	display: block;
+}
+
+.ul a:hover {
+	color: #ad1c1c;
+}
+
