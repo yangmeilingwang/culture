@@ -139,38 +139,38 @@
 							<a class="fr">更多&gt;&gt;</a>
 						</div>
 						<div class="center_img">
-							<div class="pic1 fl">
+							<div class="pic1 fl im">
 								<a class="bofang"><img src="img/tu10.png"></a>
 								<div class="box"></div>
-								<a><img src="img/tu1.png"></a>
+								<a><img src="img/tu1.png" class="active shadow" alt="" data-value="./img/CrossRoad (2014).mp4" ></a>
 								<p class="bg-defult">撮泰吉撮泰吉撮泰吉撮泰吉撮泰吉</p>
 								<p class="date date1">2017-7-25</p>
 							</div>
-							<div class="pic1 fl">
+							<div class="pic1 fl im">
 								<a class="bofang"><img src="img/tu10.png"></a>
 								<div class="box"></div>
-								<a><img src="img/tu2.png"></a>
+								<a><img src="img/tu2.png" class=" shadow" alt=""data-value="./img/CrossRoad (2014).mp4"></a>
 								<p class="bg-defult">铃铛舞铃铛舞铃铛舞铃铛舞铃铛舞的视频视频视频...</p>
                                 <p class="date">2017-7-23</p>
 							</div>
-							<div class="pic1 fl">
+							<div class="pic1 fl im">
 								<a class="bofang"><img src="img/tu10.png"></a>
 								<div class="box"></div>
-								<a><img src="img/tu3.png"></a>
+								<a><img src="img/tu3.png" class=" shadow" alt="" data-value="./img/CrossRoad (2014).mp4"></a>
 								<p class="bg-defult">彝族古歌彝族古歌彝族古歌彝族古歌彝族古歌...</p>
 								 <p class="date">2017-7-23</p>
 							</div>
-							<div class="pic1 fl">
+							<div class="pic1 fl im">
 								<a class="bofang"><img src="img/tu10.png"></a>
 								<div class="box"></div>
-								<a><img src="img/tu4.png"></a>
+								<a><img src="img/tu4.png" class=" shadow" alt="" data-value="./img/CrossRoad (2014).mp4"></a>
 								<p class="bg-defult">苗族古歌苗族古歌苗族古歌苗族古歌苗族古歌苗族古歌...</p>
 								 <p class="date">2017-7-23</p>
 							</div>
-							<div class="pic1 fl">
+							<div class="pic1 fl im">
 								<a class="bofang"><img src="img/tu10.png"></a>
 								<div class="box"></div>
-								<a><img src="img/tu5.png"></a>
+								<a><img src="img/tu5.png" class=" shadow" alt="" data-value="./img/CrossRoad (2014).mp4"></a>
 								<p class="bg-defult">核桃工艺品核桃工艺品核桃工艺品</p>
 								 <p class="date date1">2017-7-15</p>
 							</div>
@@ -199,6 +199,29 @@
 				</div>
 			</div>
 		</div>
+		<div id="box2">  
+			<div class="shadow"></div>
+			<div class="inner">
+				<a href="javascript:;" class="closed">X</a>
+				<video src="" autoplay controls></video>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+			<script>
+			$(".center_img>.im").each(function() {
+				$(this).click(function() {
+					$("#box2").show().find("video").attr({
+						src: $(this).find("img").last().attr('data-value')
+					})
+				})
+			})
+
+			$("#box2 .closed").click(function() {
+				$('#box2').hide().find("video").attr({
+					src: ""
+				})
+			})
+		</script>
 	</body>
 
 </html>
